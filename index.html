@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tage and link page-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/site-internet.png">
+    <!-- title exesorice-->
+    <title>Product Service</title>
+</head>
+<body>
+ <div class="container">
+    <!-- start header page in html-->
+    <div class="haider">
+        <div class="text">
+        <h1>Product survice</h1>
+        </div>
+        <div class="buttons">
+            <!--style in web dezine-->
+            <button class="button">
+                subimt
+              </button>
+              <!--style in web dezine-->
+        </div>
+    
+    </div>
+   <!-- finish header page in html-->
+   <!--start page input to information -->
+    <div class="informationInputes">
+
+         <div class="inputes1">
+               <input onkeyup="getTotal()" type="text" placeholder="title" id="title">
+               <input onkeyup="getTotal()" type="number" placeholder="price" id="price">
+               <input onkeyup="getTotal()" type="number" placeholder="taxes" id="taxes">
+               <input onkeyup="getTotal()" type="number" placeholder="discount" id="discount">
+               <input onkeyup="getTotal()" type="number" placeholder="adsens" id="adsens">
+               <small id="total"></small>
+         </div>
+           <div class="buttonCreat">
+                 <button onclick="CreatProduct()">Creat</button>
+           </div>
+    </div>
+  <!--finish page input to information -->
+  <!-- start output the information-->
+           <div class="output">
+              <table>
+                <tr>
+                  <th>title</th>
+                  <th>price</th>
+                  <th>taxes</th>
+                  <th>discount</th>
+                  <th>ads</th>
+                  <th>total</th>
+                  <th >Delete</th>
+                </tr>
+              
+              <tbody id="tbadt">
+               
+              </tbody>
+            </table>
+            
+           </div>
+
+   <!-- finish output the information-->
+ </div>
+    <!-- link to page html-->
+    <script src="script.js"></script>
+</body>
+</html>
